@@ -14,7 +14,7 @@ A tool for exploring team compositions in Teamfight Tactics (TFT) Set 14, design
 ## 🚀 Quick Start
 
 ```python
-from tft_optimizer import TFTTraitOptimizer, champions_data, trait_thresholds
+from trait_optimizer_set_14 import TFTTraitOptimizer, champions_data, trait_thresholds
 
 # Initialize the optimizer
 optimizer = TFTTraitOptimizer(champions_data, trait_thresholds, epsilon=0.05)
@@ -165,11 +165,12 @@ Active Traits:
 git clone https://github.com/Mimsqueeze/tft-traits.git
 ```
 
-2. Run the optimizer:
+2. Modify the `main()` function of `trait_optimizer_set_14.py` according to your specifications.
+
+3. Run the optimizer:
 ```bash
 python trait_optimizer_set_14.py
 ```
 
 ## ‼️ Note
 Note, this is just a fun little project that is supposed to be proof-of-concept. I wanted to apply the concepts I learned in my Artificial Intelligence course, while also experimenting with using generative AI coding assistants like Claude, ChatGPT, and Github Copilot. I would NOT use the comps the program actually gives you lol.
-
