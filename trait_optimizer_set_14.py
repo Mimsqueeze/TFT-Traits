@@ -417,15 +417,15 @@ def main():
         team_size=9, 
         top_n=5, 
         num_epochs=10000,
-        include_champions=["Aurora"],
+        include_champions=["LeBlanc", "Skarner"],
         exclude_champions=[],
-        exclude_traits=["Cypher"],
+        exclude_traits=[],
         include_traits=[]  # Example: prioritize these traits
     )
     
     for i, comp in enumerate(constrained_comps, 1):
         print(f"\n--- Constrained Composition {i} (Score: {comp['score']:.2f}) ---")
-        analysis = optimizer.analyze_composition(comp, exclude_traits=["Cypher"], include_traits=[])
+        analysis = optimizer.analyze_composition(comp, exclude_traits=[], include_traits=[])
         
         print(f"Team Size: {comp['size']}")
         print(f"Champions: {', '.join(analysis['champion_names'])}")
